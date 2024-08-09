@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "90ade67bca1562aa",
+        "id": "4672aa6babee794f",
         "type": "tabs",
         "children": [
           {
-            "id": "399eee48e4dc4659",
+            "id": "4650a6b85d267d97",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Functor.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Functor.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Functor.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Functor.md"
+              }
             }
           },
           {
@@ -147,7 +155,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "399eee48e4dc4659",
+  "active": "4650a6b85d267d97",
   "lastOpenFiles": [
     "contrainte.md",
     "Haskell/Functor.md",

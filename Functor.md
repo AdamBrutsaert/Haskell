@@ -27,6 +27,8 @@ A functor must respect the following laws:
 - **Identity**: `fmap id = id`
 - **Composition**: `fmap (f . g) = fmap f . fmap g`
 
+These are not enforced by the compiler, so one must be careful when implementing a new instance of `Functor`.
+
 ## Examples
 
 ### List
