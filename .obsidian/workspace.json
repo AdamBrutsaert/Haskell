@@ -1,0 +1,175 @@
+{
+  "main": {
+    "id": "d3d412f55404dccc",
+    "type": "split",
+    "children": [
+      {
+        "id": "90ade67bca1562aa",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "399eee48e4dc4659",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "fe20eb74ff0fd86e",
+    "type": "split",
+    "children": [
+      {
+        "id": "1ba5977fd8f272bb",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3c332db66436eb96",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "aae494757aab87d2",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "f66942e7ba4cd088",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "9ed4171cfa7cfedf",
+    "type": "split",
+    "children": [
+      {
+        "id": "be14f8e185bf8d40",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7accb4e93ee1b050",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "7bbfcdca54cd52f4",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "5e50eef92706b5b7",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "3b1fa0fd843197f8",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          },
+          {
+            "id": "85aeabb56449a095",
+            "type": "leaf",
+            "state": {
+              "type": "copilot-chat-view",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "399eee48e4dc4659",
+  "lastOpenFiles": [
+    "contrainte.md",
+    "Haskell/Functor.md",
+    "Kubernetes/Kubernetes.md",
+    "Kubernetes/Installation.md",
+    "sorte.md",
+    "copilot-conversations/Chat-2024_06_25-18_24_09.md",
+    "Haskell",
+    "Kubernetes/Minikube.md",
+    "copilot-conversations",
+    "Docker/Installation.md",
+    "Docker/Docker.md",
+    "Docker/Objectives.md",
+    "Docker/What is Docker ?.md",
+    "Docker/Concepts/Docker Engine.md",
+    "History.md",
+    "Docker/History.md",
+    "Docker/Concepts/Container.md",
+    "Docker/Concepts/Image.md",
+    "Docker/Concepts/Untitled",
+    "Docker/Concepts",
+    "Docker",
+    "Kubernetes"
+  ]
+}
