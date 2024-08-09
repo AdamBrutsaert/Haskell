@@ -6,14 +6,34 @@
       {
         "id": "4672aa6babee794f",
         "type": "tabs",
+        "dimension": 41.70644391408115,
         "children": [
           {
-            "id": "4650a6b85d267d97",
+            "id": "c9eb9a287af3c921",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "Functor.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "2f60fb9c925c09f1",
+        "type": "tabs",
+        "dimension": 58.29355608591885,
+        "children": [
+          {
+            "id": "e6da0129cd914e8a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Applicative functor.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Functor.md",
+                "file": "Applicative functor.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +122,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Functor.md",
+                "file": "Applicative functor.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +145,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Functor.md"
+                "file": "Applicative functor.md"
               }
             }
           },
@@ -155,8 +175,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4650a6b85d267d97",
+  "active": "e6da0129cd914e8a",
   "lastOpenFiles": [
+    "Functor.md",
+    "Applicative functor.md",
     "contrainte.md",
     "Haskell/Functor.md",
     "Kubernetes/Kubernetes.md",

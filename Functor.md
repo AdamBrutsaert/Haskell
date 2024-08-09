@@ -8,12 +8,15 @@ One can see a functor as a generic container.
 ```haskell
 type Functor :: (* -> *) -> Constraint
 class Functor f where
-  fmap :: (a -> b) -> f a -> f b
-  (<$) :: a -> f b -> f a
+	fmap :: (a -> b) -> f a -> f b
+	(<$) :: a -> f b -> f a
 
-  (<$) = fmap . const
-  {-# MINIMAL fmap #-}
+	(<$) = fmap . const
+	{-# MINIMAL fmap #-}
 ```
+
+The infix operator of `fmap` is `<$>`.
+The flipped version of `<$` is `$>`.
 
 Examples of types that are instances of `Functor`:
 - `[]`
@@ -35,13 +38,13 @@ These are not enforced by the compiler, so one must be careful when implementing
 
 ```haskell
 instance Functor [] where
-  fmap _ [] = []
-  fmap f (x:xs) = f x : fmap f xs
+	fmap _ [] = []
+	fmap f (x:xs) = f x : fmap f xs
 ```
 
 ```haskell
 fmap (+1)  [1, 2, 3] -- [2, 3, 4]
-fmap (*) [1, 2, 3] -- [(*1), (*2), (*3)]
+(*) <$> [1, 2, 3] -- [(*1), (*2), (*3)]
 'a' <$ replicate 3 undefined -- "aaa"
 ```
 
@@ -49,13 +52,13 @@ fmap (*) [1, 2, 3] -- [(*1), (*2), (*3)]
 
 ```haskell
 instance Functor Maybe where
-  fmap _ Nothing = Nothing
-  fmap f (Just x) = Just (f x)
+	fmap _ Nothing = Nothing
+	fmap f (Just x) = Just (f x)
 ```
 
 ```haskell
 fmap (+1) (Just 1) -- Just 2
-fmap (+1) Nothing -- Nothing
+(+1) <$> Nothing -- Nothing
 fmap (+) (Just 1) -- Just (+1)
 3 <$ Just 5 -- Just 3
 ```
@@ -64,31 +67,31 @@ fmap (+) (Just 1) -- Just (+1)
 
 ```haskell
 instance Functor (Either a) where
-  fmap _ (Left x) = Left x
-  fmap f (Right y) = Right (f y)
+	fmap _ (Left x) = Left x
+	fmap f (Right y) = Right (f y)
 ```
 
 ```haskell
 fmap (+1) (Right 1) -- Right 2
-fmap (+1) (Left "error") -- Left "error"
+(+1) <$> (Left "error") -- Left "error"
 fmap (+) (Right 1) -- Right (+1)
 3 <$ Right 5 -- Right 3
-3 <$ Left "error" -- Left "error"
+Left "error" $> 3  -- Left "error"
 ```
 
 ### IO
 
 ```haskell
 instance Functor IO where
-  fmap f io = io >>= (return . f)
+	fmap f io = io >>= (return . f)
 ```
 
 ```haskell
-foo :: (Num a) => IO a
+foo :: Num a => IO a
 foo = return 1
 
 fmap (+1) foo -- IO 2
-fmap (+) foo -- IO (+1)
+(+) <$> foo -- IO (+1)
 3 <$ foo -- IO 3
 ```
 
@@ -96,12 +99,12 @@ fmap (+) foo -- IO (+1)
 
 ```haskell
 instance Functor ((->) r) where
-  fmap = (.)
+	fmap = (.)
 ```
 
 ```haskell
 fmap (+1) (*2) 3 -- 7
-fmap (+1) (*2) -- \x -> (+1) ((*2) x)
+(+1) <$> (*2) -- \x -> (+1) ((*2) x)
 3 <$ (*2) $ 3 -- 3
-3 <$ (*2) -- \_ -> 3
+(*2) $> 3 -- \_ -> 3
 ```
